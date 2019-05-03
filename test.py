@@ -23,11 +23,12 @@ image = types.Image(content=content)
 # Performs label detection on the image file
 #response = client.label_detection(image=image)
 #labels = response.label_annotations
+#print(labels)
 
 response = client.text_detection(image=image)
 texts = response.text_annotations
-print(texts)
-#print(texts[0].description)
+#print(texts)
+print(texts[0].description)
 
 """
 for text in texts:
